@@ -1,0 +1,51 @@
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+section{
+    box-shadow: 1px 1px 1px #eee;
+    padding: 1px 0; 
+}
+.wrap{
+    margin: 0 auto;
+    width: 1190px;
+    display:flex;
+    margin-top: 100px; 
+    margin-bottom: 100px; 
+    box-sizing: border-box;
+}
+.subject{
+    font-weight: 500;
+    text-align: center;
+    line-height: 55px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border: 2px solid #ffdf7b;
+    border-radius: 7px;
+    padding: 0 25px;
+    font-size: 24px;
+}
+.hgroup{
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.block{
+    display: block;
+}
+.go{  
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    border-color: #999;
+    display: block;
+    width: auto;
+    transition: all 0.5s;
+    height: 24px;
+}
+.go:hover{   
+    background-color: #999;
+    color: #fff;
+}

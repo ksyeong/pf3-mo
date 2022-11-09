@@ -1,0 +1,184 @@
+@media screen and (max-width:768px){  /* 장치가 스크린이고 화면너비가 최대768px일때(768px이하) 스타일적용 */
+/* common   */
+  .wrap{
+    width: 80%;
+    box-sizing: border-box;
+  }
+  .subject{
+    font-size: 20px;
+    width: auto;
+  }
+  .subject2{
+    font-size: 35px;
+  }
+/*  헤더부분  */
+  header .h-nav{
+    width: 100%;
+    align-items: center;
+  }
+  header .wrap{   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 20px);
+    height: 100%;
+    margin: 0 10px;
+  }
+  header .wrap h1 a{
+    height: 60px;
+    width: 60px   
+  }
+  header ul li{
+    display: none;
+  }
+  header ul.gnb a.ham{
+    display: block;
+    font-size: 0;
+    background-image: url(../img/menu.svg);
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  header ul.enb{
+    display: none;
+  }
+  div#title{    
+    background-size: cover;
+    height: 70%;
+  }
+  div#title::before{
+    height: 70%;
+  }
+  div#title .wrap{
+    width: calc(100% - 20px);
+    height: 100%;
+    
+  }
+  div#title .wrap .title_writing{  
+    width: 100%;
+  }
+  div#title h2{ 
+    font-size: 20px;
+    font-weight: 300;
+  }
+  div#title h2 + p{
+  font-size: 41px;
+  }
+  div#title h2 + p + p{
+    font-size: 16px;
+    font-weight: 300;
+  }
+  div#title .wrap img{
+    display: none;
+  }
+  div#title .wrap span{    
+  bottom: 20px;
+  }
+/*  about  */
+  section#about .company{
+    width: 100%
+  }
+  section#about .subject{
+    font-size: 20px;
+    width: auto;
+  }
+  section#about .company div p{ 
+    font-size: 17px;
+  }
+  section#about .company p{
+    font-size: 14px;
+  }
+/*  서비스  */
+  #service .wrap ul{    
+    flex-direction: column;
+    align-items: center;
+  }
+  #service .wrap ul li{   
+    width: 80%;
+    margin-bottom: 50px;
+  }
+  #service .wrap ul li h3{    
+    font-size: 35px;
+  }
+  #service .wrap ul li p:nth-of-type(1){    
+    font-size: 16px;
+  }
+  #service .wrap ul li p{    
+    font-size: 15px;
+  }
+  #service .wrap ul li a{    
+    margin-bottom: 20px;
+  }
+/*  히스토리  */
+  #history .wrap ul.list{    
+    width: 90%;
+  }
+  #history .wrap ul.list::before{
+    border-color: #eee;      
+  }
+  #history .wrap ul.list::after{
+    border-color: #eee; 
+  }
+  #history .wrap ul li{
+    font-size: 16px;
+  }
+/* 위치안내 */
+  #location .wrap{   
+    flex-direction: column-reverse;
+    width: 400px;
+  }
+  #location .wrap .right{    
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #location .wrap .right a{
+    margin-top: 20px;
+  }
+  #location .wrap .right a::before{
+    display: none;
+  }
+  #location .wrap iframe{   
+    width: 400px;
+    height: 250px;
+    display: block;
+  }
+/* footer 부분   */
+  footer .wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .wrap p.copyright{
+    position: static;
+    margin-bottom: 15px;
+  }
+  footer .wrap address{
+    margin: 0;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 8px;
+    flex-direction: column;
+  }
+  footer .wrap address strong:nth-child(n+2){
+    margin: 0;
+  }
+  footer .wrap p.tel{ 
+    margin-bottom: 30px;
+  }
+/*  스크롤  */
+  div#title .scroll{   
+    left: calc((100% - 41px) / 2);
+  }
+/* aside   */
+  aside{  
+    width: 30px;
+    height: 30px;
+  }
+  aside button{   
+    font-size: 16px;
+  }
+}
+    
