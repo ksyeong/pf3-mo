@@ -14,15 +14,18 @@ section{
     box-sizing: border-box;
 }
 .subject{
-    font-weight: 500;
+    font-weight: 300;
     text-align: center;
     line-height: 55px;
     margin: 0 auto;
     margin-bottom: 30px;
-    border: 2px solid #ffdf7b;
     border-radius: 7px;
     padding: 0 25px;
-    font-size: 24px;
+    font-size: 20px;
+}
+.subject2{
+    font-size: 30px;
+    font-weight: 300;
 }
 .hgroup{
     text-align: center;
@@ -30,16 +33,17 @@ section{
     display: flex;
     flex-direction: column;
 }
+.p{
+    font-weight: 300;
+    font-size: 18px;
+}
 .block{
     display: block;
 }
 .go{  
-    border: 1px solid;
-    border-radius: 5px;
     font-size: 20px;
     padding: 10px;
     margin-top: 20px;
-    border-color: #999;
     display: block;
     width: auto;
     transition: all 0.5s;
