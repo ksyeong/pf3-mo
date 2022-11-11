@@ -36,6 +36,7 @@ footer .wrap address span{
 footer .wrap address strong{
   font-weight: 700;
   margin-right: 5px;
+  color: #eee;
 }
 
 footer .wrap address strong:nth-child(n+2){

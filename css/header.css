@@ -8,8 +8,7 @@ header{
 }
 header .h-nav{
     width: 100%;
-    height: 90px;
-    box-shadow: 1px 1px 4px #d3d6ea;
+    height: 98px;
     position: fixed;
     transition: all 0.7s;
     box-sizing: border-box;
@@ -35,7 +34,6 @@ header .wrap h1{
 header .wrap nav{    
     display: flex;
     width: 100%;
-    position: relative;
     justify-content: center;
     column-gap: 30px;
 }
@@ -49,7 +47,6 @@ header .wrap h1 > a{
 }
 header ul{
     display: flex;
-    width: 100%;
 }
 header ul li{  
 }
@@ -67,28 +64,60 @@ header ul.gnb > li{
 header ul.gnb > li > a{ 
     font-size: 19px;
     display: block;
-    line-height: 3;
+    line-height: 5;
     border-bottom: 3px solid transparent;
+    font-weight: 300;
 }
 header ul.gnb > li > a:hover{
     color: #fff;
     border-bottom: 3px solid #eee;
-    box-sizing: border-box;
 }
-header ul.gnb > li div.bg{
-    
-    width: 100%;
-    height: 300px;
+header ul.gnb > li:hover div.bg{
+    display: block;
+}
+header ul.gnb > li div.bg{    
     position: absolute;
     left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: none;
+    font-weight: 300;
 }
 header ul.gnb > li div.bg div.wrap{
     
+    justify-content: left;
+    height: 100%;
+    padding-top: 0px;
+}
+header ul.gnb > li div.bg div.wrap h2{
+    width: 30%;
+    border-right: 1px solid #999;
+    height: 100%;
+    padding-top: 20px;
+    box-sizing: border-box;
+    font-size: 30px;
+    text-align: center;
 }
 header ul.gnb > li div.bg div.wrap ul.sub1{
     
+    flex-direction: column;
+    height: 100%;
+    padding-top: 20px;
+    box-sizing: border-box;
 }
-header ul.gnb li:last-child{
+header ul.gnb > li div.bg div.wrap ul.sub1 li{
+    border-left: 3px solid transparent; 
+}
+header ul.gnb > li div.bg div.wrap ul.sub1 li:hover{
+    border-left: 3px solid #03046b; 
+}
+header ul.gnb > li div.bg div.wrap ul.sub1 li a{   
+    padding-left: 20px;
+    font-size: 18px;
+    color: #333;
+}
+header ul.gnb > li:last-child{
     display: none;
 }
 header ul.enb{    
@@ -96,7 +125,7 @@ header ul.enb{
     align-items: center;
     column-gap: 8px;
 }
-header ul.enb li a{
+header ul.enb > li > a{
     font-size: 0;
     display: block;
     width: 40px;
@@ -104,14 +133,14 @@ header ul.enb li a{
     background-repeat: no-repeat;
     transition: all 0.3s;
 }
-header ul.enb li:first-child a{  
+header ul.enb > li:first-child > a{  
     background-image: url(../img/search.svg);
     
 }
-header ul.enb li:last-child a{    
+header ul.enb > li:last-child > a{    
     background-image: url(../img/menu.svg);
 }
-header ul.enb li a:hover{
+header ul.enb > li > a:hover{
     width: 45px;
     height: 45px;
 }

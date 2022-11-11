@@ -2,30 +2,24 @@ body{
     font-family: 'Noto Sans KR', sans-serif;
 }
 section{
-    box-shadow: 1px 1px 1px #eee;
-    padding: 1px 0; 
+    padding: 200px 0;
 }
 .wrap{
     margin: 0 auto;
     width: 1190px;
     display:flex;
-    margin-top: 100px; 
-    margin-bottom: 100px; 
-    box-sizing: border-box;
 }
 .subject{
     font-weight: 300;
     text-align: center;
-    line-height: 55px;
     margin: 0 auto;
-    margin-bottom: 30px;
-    border-radius: 7px;
-    padding: 0 25px;
+    margin-bottom: 10px;
     font-size: 20px;
+    color: #7c7c7c;
 }
 .subject2{
-    font-size: 30px;
-    font-weight: 300;
+    font-size: 33px;
+    font-weight: 400;
 }
 .hgroup{
     text-align: center;
@@ -35,21 +29,48 @@ section{
 }
 .p{
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
 }
 .block{
     display: block;
 }
 .go{  
-    font-size: 20px;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 16px;
     display: block;
-    width: auto;
-    transition: all 0.5s;
-    height: 24px;
+    width: 183px;
+    transition: all 0.7s;
+    height: 20px;
+    color: #7590ff;
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
 }
-.go:hover{   
-    background-color: #999;
-    color: #fff;
+.go:hover::after{ 
+    display: none;
+}
+.go::after{
+    content: "";
+    border: 2px solid;
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+    border-left: transparent;
+    border-bottom: transparent;
+    transform: rotate(45deg);
+    margin-left: 10px;
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes slide{
+    0%{
+        
+    }
+    100%{
+        transform: translateX(10px) rotate(45deg);
+        opacity: 0;
+    }
 }
