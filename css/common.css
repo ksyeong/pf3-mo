@@ -2,7 +2,7 @@ body{
     font-family: 'Noto Sans KR', sans-serif;
 }
 section{
-    padding: 200px 0;
+    padding: 150px 0;
 }
 .wrap{
     margin: 0 auto;
@@ -13,13 +13,16 @@ section{
     font-weight: 300;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 20px;
     color: #7c7c7c;
 }
 .subject2{
     font-size: 33px;
     font-weight: 400;
+}
+h3{
+    font-size: 20px;
 }
 .hgroup{
     text-align: center;

@@ -2,7 +2,7 @@
 header{
     width: 100%;
     position: relative;
-    z-index: 2;
+    z-index: 3;
     margin: 0;
     transition: all 0.7s;
 }
@@ -92,7 +92,7 @@ header ul.gnb > li div.bg div.wrap{
 }
 header ul.gnb > li div.bg div.wrap h2{
     width: 30%;
-    border-right: 1px solid #999;
+    border-right: 1px solid #eee;
     height: 100%;
     padding-top: 20px;
     box-sizing: border-box;
@@ -123,7 +123,7 @@ header ul.gnb > li:last-child{
 header ul.enb{    
     width: 10%;
     align-items: center;
-    column-gap: 8px;
+    justify-content: end;
 }
 header ul.enb > li > a{
     font-size: 0;
@@ -132,10 +132,6 @@ header ul.enb > li > a{
     height: 38px;
     background-repeat: no-repeat;
     transition: all 0.3s;
-}
-header ul.enb > li:first-child > a{  
-    background-image: url(../img/search.svg);
-    
 }
 header ul.enb > li:last-child > a{    
     background-image: url(../img/menu.svg);

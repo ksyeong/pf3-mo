@@ -6,7 +6,7 @@ div#title{
     min-height: 800px;
     width: 100%;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 div#title::before{
     content: "";
@@ -16,7 +16,7 @@ div#title::before{
     min-height: 800px;
     height: 100%;
     position: absolute;
-    z-index: 0;
+    z-index: 1;
     left: 0;
     top: 0;
 }
@@ -50,9 +50,8 @@ div#title .wrap img{
     margin-left: 80px;
     position: absolute;
     animation-name: change;
-    animation-duration: 20s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
 }
 div#title .wrap img:nth-of-type(1){
     
@@ -67,22 +66,17 @@ div#title .wrap img:nth-of-type(2){
     25%{
         opacity: 1;
     }
-    50%{
-        1
-    }
-    75%{
-        opacity: 0;
-    }
     100%{
         opacity:0;
     }
 }
 div#title .scroll{  
     position: absolute;
-    bottom: 30px;
-    left: calc((100% - 85px) / 2);
+    bottom: 50px;
+    left: calc((100% - 100px) / 2);
     height: 60px;
     cursor: pointer;
+    z-index: 1;
 }
 div#title h2{ 
     font-size: 24px;
@@ -115,6 +109,8 @@ div#title h2 + p{
 }
 div#title h2 + p + p{
     color: #e5e3e3;
+    animation-name: right;
+    animation-duration: 1s;
 }
 
 

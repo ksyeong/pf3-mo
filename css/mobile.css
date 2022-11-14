@@ -5,11 +5,17 @@
     box-sizing: border-box;
   }
   .subject{
-    font-size: 20px;
+    font-size: 18px;
     width: auto;
   }
   .subject2{
-    font-size: 35px;
+    font-size: 26px;
+  }
+  h3{
+    font-size: 16px;
+  }
+  .p{
+    font-size: 14px;
   }
 /*  헤더부분  */
   header .h-nav{
@@ -31,24 +37,31 @@
   header ul li{
     display: none;
   }
-  header ul.gnb a.ham{
+  header ul.gnb li:last-of-type{
     display: block;
-    font-size: 0;
     background-image: url(../img/menu.svg);
     width: 40px;
     height: 40px;
     background-repeat: no-repeat;
     background-size: contain;
+    padding: 0;
+  }
+  header ul.gnb{
+    justify-content: right;
+    align-items: center;
+  }
+  header ul.gnb li:last-of-type a{
+    font-size: 0;
   }
   header ul.enb{
     display: none;
   }
   div#title{    
     background-size: cover;
-    height: 70%;
+    min-height: 30%;
   }
   div#title::before{
-    height: 70%;
+    min-height: 100%;
   }
   div#title .wrap{
     width: calc(100% - 20px);
@@ -57,19 +70,21 @@
   }
   div#title .wrap .title_writing{  
     width: 100%;
+    /*! justify-content: normal; */
   }
   div#title h2{ 
-    font-size: 20px;
-    font-weight: 300;
-  }
-  div#title h2 + p{
-  font-size: 41px;
-  }
-  div#title h2 + p + p{
     font-size: 16px;
     font-weight: 300;
   }
-  div#title .wrap img{
+  div#title h2 + p{
+  font-size: 30px;
+  }
+  div#title h2 + p + p{
+    font-size: 13px;
+    font-weight: 300;
+    width: 65%;
+  }
+  div#title .wrap div{
     display: none;
   }
   div#title .wrap span{    
@@ -80,7 +95,7 @@
     width: 100%
   }
   section#about .subject{
-    font-size: 20px;
+    font-size: 18px;
     width: auto;
   }
   section#about .company div p{ 
@@ -88,6 +103,10 @@
   }
   section#about .company p{
     font-size: 14px;
+    width: 73%;
+  }
+  section#about .company span.block{
+    display: none;
   }
 /*  서비스  */
   #service .wrap ul{    
@@ -95,38 +114,56 @@
     align-items: center;
   }
   #service .wrap ul li{   
-    width: 80%;
+    width: 90%;
     margin-bottom: 50px;
   }
   #service .wrap ul li h3{    
-    font-size: 35px;
-  }
-  #service .wrap ul li p:nth-of-type(1){    
-    font-size: 16px;
+    font-size: 24px;
   }
   #service .wrap ul li p{    
     font-size: 15px;
+    padding: 10px;
   }
   #service .wrap ul li a{    
     margin-bottom: 20px;
   }
 /*  히스토리  */
   #history .wrap ul.list{    
-    width: 90%;
+    width: 106%;
+    margin: 0;
+    padding-left: 0;
+    text-align: center;
   }
   #history .wrap ul.list::before{
-    border-color: #eee;      
+    display: none;      
   }
   #history .wrap ul.list::after{
-    border-color: #eee; 
+    display: none;
   }
   #history .wrap ul li{
-    font-size: 16px;
+    font-size: 13px;
+  }
+  #history .wrap ul li:not(:last-of-type)::after{
+    content: "";
+    border: 1px solid #fff;
+    display: block;
+    width: 15px;
+    height: 15px;
+      
+    border-left: transparent;
+    border-bottom: transparent;
+    transform: rotate(135deg);
+    margin: 0 auto;
+    margin-bottom: 7px;
   }
 /* 위치안내 */
   #location .wrap{   
     flex-direction: column-reverse;
     width: 400px;
+    align-items: center;
+  }
+  #location .wrap iframe{
+    
   }
   #location .wrap .right{    
     margin: 0 auto;
@@ -140,8 +177,8 @@
     display: none;
   }
   #location .wrap iframe{   
-    width: 400px;
-    height: 250px;
+    width: 228px;
+    height: 350px;
     display: block;
   }
 /* footer 부분   */
@@ -153,7 +190,9 @@
   }
   footer .wrap p.copyright{
     position: static;
-    margin-bottom: 15px;
+    margin-bottom: 29px;
+    font-size: 13px;
+    text-align: center;
   }
   footer .wrap address{
     margin: 0;
@@ -167,6 +206,11 @@
   }
   footer .wrap p.tel{ 
     margin-bottom: 30px;
+    display: flex;
+    margin: 0 auto;
+  }
+  footer .wrap p.tel strong{
+    
   }
 /*  스크롤  */
   div#title .scroll{   

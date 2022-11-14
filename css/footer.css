@@ -28,6 +28,7 @@ footer .wrap address{
   display: flex;
   box-sizing: border-box;
   margin-top: 13px;
+  font-weight: 300;
 }
 footer .wrap address span{
   display: none;
@@ -46,6 +47,7 @@ footer .wrap p.copyright{
   position: absolute;
   left: 131px;
   top: 72px;
+  font-weight: 300;
 }
 footer .wrap p.tel{
   margin-right: 70px;
