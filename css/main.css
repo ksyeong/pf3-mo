@@ -275,7 +275,7 @@ aside{
     position: fixed;
     right: 0;
     bottom: 20%;    
-    z-index: 1;
+    z-index: 3;
     display: flex;
     flex-direction: column;
     border: 1px solid #6c6c6c;
