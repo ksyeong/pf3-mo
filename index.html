@@ -64,11 +64,21 @@
                         </li>
                         <li><a href="https://hoppy.co.kr/?p=5">Hoppy!</a></li>
                         <li><a href="https://hoppy.co.kr/?p=6" target="_blank">이벤트/공지</a></li>
-                        <li><a href="" class="ham">메뉴 보기</a></li>
+                        <li>
+                            <a href="" class="ham">메뉴 보기
+                            </a>
+                        </li>
                     </ul>
                     <ul class="enb">
                         <li>
-                            <a href="">SITEMAP</a>
+                            <div class="cartegory">
+                                <a  class="menu" href="">SITEMAP</a>
+                                <ul>
+                                    <li><a href="">수제맥주</a></li>
+                                    <li><a href="">리뷰</a></li>
+                                    <li><a href="">회사소개</a></li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </nav>
@@ -189,17 +199,24 @@
     </footer>
 
     <script>
-        $(document).ready(function(){
-        $(window).scroll(function(){
-        let scroll = $(window).scrollTop();
-        if (scroll > 1) {
-            $(".h-nav").css("background" , "#03046b");
-        }
-        else{
-            $(".h-nav").css("background" , "transparent");   
-        }
-        })
-    })
+        $(document).ready(
+            function(){
+                $(window).scroll(
+                    function(){
+                        let scroll = $(window).scrollTop();
+                        if (scroll > 1) {
+                            $(".h-nav").css("background" , "#03046b");
+                        }
+                        else{
+                            $(".h-nav").css("background" , "transparent");   
+                        }
+                    });
+                $(".menu").click(
+                    function(){
+                        $(".cartegory").toggleClass("show");
+                        return false;
+            });
+                        });
 </script>
 </body>
 </html>

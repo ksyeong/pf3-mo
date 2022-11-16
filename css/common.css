@@ -77,3 +77,6 @@ h3{
         opacity: 0;
     }
 }
+.show{
+    right: 0 !important;
+}
