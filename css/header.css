@@ -125,40 +125,35 @@ header ul.enb{
     align-items: center;
     justify-content: end;
 }
-header ul.enb > li div.cartegory{
-    
+header ul.enb > li div.cartegory{   
     display: flex;
     position: absolute;
     top: 27px;
     right: -300px;
-    width: 30%;
     height: 100%;
 }
 header ul.enb > li div.cartegory a.menu{
     font-size: 0;
     display: block;
-    width: 40px;
+    width: 254px;
     height: 38px;
     background-repeat: no-repeat;
     transition: all 0.3s;
-}
-header ul.enb > li:last-child div.cartegory a.menu{    
-    background-image: url(../img/menu.svg);
+    background-image: url(../img/menu.svg)
 }
 header ul.enb > li div.cartegory a.menu:hover{
-    width: 45px;
     height: 45px;
 }
-header ul.enb > li:last-child div.cartegory ul{
-    
+header ul.enb > li:last-child div.cartegory ul{  
     flex-direction: column;
     width: 300px;
 }
 header ul.enb > li:last-child div.cartegory ul li{
     
+    width: 300px;
 }
 header ul.enb > li:last-child div.cartegory ul li a{
     
-    display: flex;
-    justify-content: center;
+    display: block;
+    text-align: center;
 }

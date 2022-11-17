@@ -112,6 +112,10 @@ div#title h2 + p + p{
     animation-name: right;
     animation-duration: 1s;
 }
+div#title .wrap .title_writing > a{    
+    font-size: 18px;
+    color: #fff;
+}
 
 
 
