@@ -101,6 +101,7 @@ section#about .company img:first-child + img{/* img태그는 인라인태그 중
     justify-content: space-around;
     display: flex;
     margin-bottom: 60px;
+    transition: all 3s;
 }
 
 #service .wrap ul li{
@@ -176,6 +177,7 @@ section#about .company img:first-child + img{/* img태그는 인라인태그 중
     width: 28%;
     margin: 0 auto;
     margin-left: 435px;
+    transition: all 3s;
 }
 #history .wrap ul.list::before{
     content: "";   

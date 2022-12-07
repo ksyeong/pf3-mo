@@ -16,6 +16,7 @@ section{
     margin-bottom: 20px;
     font-size: 20px;
     color: #7c7c7c;
+    transition: all 1s;
 }
 .subject2{
     font-size: 33px;
