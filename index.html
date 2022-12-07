@@ -36,8 +36,16 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- script -->
+    <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- aos -->
+    <script src="aos/dist/aos.js"></script>
+    <link href="aos/dist/aos.css" rel="stylesheet" />
+    <script>
+      $(document).ready(function () {
+        AOS.init();
+      });
+    </script>
   </head>
 
   <body>
@@ -131,9 +139,9 @@
       <!-- 서비스 소개 -->
       <section id="service">
         <div class="wrap">
-          <h2 class="subject">LUNA BREW SERVICES</h2>
-          <p class="subject2">루나브루와 함께해보세요</p>
-          <ul>
+          <h2 class="subject" data-aos="fade-left">LUNA BREW SERVICES</h2>
+          <p class="subject2" data-aos="fade-right">루나브루와 함께해보세요</p>
+          <ul data-aos="fade-down">
             <li>
               <img src="img/collabo-hover.png" alt="" />
               <h3 class="h3">Brand collabo</h3>
@@ -187,7 +195,7 @@
               >
             </h3>
           </hgroup>
-          <ul class="list">
+          <ul class="list" data-aos="fade-up">
             <li>수제 맥주 브랜드 브루잉 설립</li>
             <li>나미나라공화국(남이섬) '깡타비어' 출시</li>
             <li>디스틸 보일러메이커(d.still Boilermaker) 맥주 출시</li>
@@ -213,6 +221,8 @@
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
+            data-aos="zoom-out-down"
+            data-aos-duration="1500"
           ></iframe>
           <div class="right">
             <hgroup class="hgroup">
