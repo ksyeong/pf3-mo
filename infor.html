@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+        $("#includedContent").load("./header.html");
+        $(".h-nav").css("background", "#03046b");
+        $(".menu").click(function () {
+        $(".cartegory").toggleClass("show");
+          return false;
+        });
+        $(".sub1 li a").click(function () {
+          $(".bg").slideUp();
+        });
+        })
+    </script>
+</head>
+<body>
+    <div id="includedContent"></div>
+    <div class="wrap">
+        <div class="buy">
+            <img src="./img/맥주.png" alt="맥주 이미지">
+            <div class="item">
+                <h1>크래머리 페일에일(Kraemerlee Pale Ale)</h1>
+                <div class="flex">
+                    <p class="acol" style="margin-right: 10px;">알콜 5%(Medium)</p>
+                    <p class="local">경기</p>
+                </div>
+                <p>쓴맛을 줄이고 다양한 시트러스 계열 홉을 배합해 크래프트 맥주를 처음 접하는 분들에게 추천하기 좋은 맥주</p>
+                <span class="star"></span>
+                <div class="btns">
+                    <div class="flex">
+                        <button class="like">좋아요</button>
+                        <button class="cart">장바구니</button>
+                    </div>
+                    <button class="itemBuy">구매하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap" style="flex-direction: column;">
+        <h2 class="h2">제품설명</h2>
+        <div class="center">
+            <h3>크래머리 페일에일 check List</h3>
+            <div class="check">
+                <p>경기도 가평 로컬 브루어리인 크래머리 브루어리가 선보이는 아름다운 황금빛의 아메리칸 스타일 페일에일.</p>
+                <p>데일리로 즐기기 좋은 맥주 스타일의 크래머리 페일에일은 에일 특유의 쓴맛은 줄이고 다양한 시트러스 계열 홉을 배합해서 아로마향이 풍부</p>
+                <p>시트러스 계열 홉의 시트러스한 과일향이 상큼한 첫인상을 선사하고 상큼한 과일의 산미가 인상적인 페일에일</p>
+                <p>상큼한 맛 다음으로는 몰트의 고소함과 끝맛은 홉의 쌉쌀함까지 밸런스를 잘 맞춘 것이 특징</p>
+                <p>집에서 데일리 혼술로 마시기 좋은 맥주! 리프레쉬가 필요할 때 생각나는 맛</p>
+            </div>
+        </div>
+        <div class="center">
+            <h3 class="tastingNote">Tasting Note</h3>
+            <ul class="tasty">
+                <li>
+                    <h4>당도</h4>
+                    <p class="on">드라이</p>
+                    <p>미디엄</p>
+                    <p>스위트</p>
+                </li>
+                <li>
+                    <h4>산도</h4>
+                    <p>낮음</p>
+                    <p class="on">중간</p>
+                    <p>높음</p>
+                </li>
+                <li>
+                    <h4>탄산</h4>
+                    <p>약함</p>
+                    <p class="on">중간</p>
+                    <p>강함</p>
+                </li>
+                <li>
+                    <h4>색상</h4>
+                    <p>약간 탁한 황금색</p>
+                </li>
+                <li>
+                    <h4>향</h4>
+                    <p>시트러스향, 허브향, 과일향이 느껴져요.</p>
+                </li>
+                <li>
+                    <h4>어울리는 음식</h4>
+                    <p>기름진 음식과 먹으면 맥주의 상큼함과 잘어울려요.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="brewery">
+            <h2 style="border-style: none;" class="h2">브루어리 정보</h2>
+            <img src="img/브루어리.png" alt="" style="width: 80%; ">
+            <h3>크래머리 브루어리</h3>
+            <p>크래머리 브루어리는 독일 양조기술을 바탕으로 유럽스타일 맥주를 만듭니다. <br>
+                자체 레시피로 만든 '바이젠복(Weizen Bock)', '별헤는밤(Milk Stout)' 맥주로 '18, '19 대한민국주류대상을 수상하였으며, <br>
+                '2018 평창올림픽' 독일 대통령 참석 행사 만찬주 및 독일대사관, 미군부대 행사에 맥주를 공급하고 있습니다.</p>
+        </div>
+    </div>
+    <footer>
+        <div class="wrap">
+          <h1 class="logo"><a href="index.html">luna</a></h1>
+          <address>
+            <strong>대표 </strong>김양규 <span class="block"></span>
+            <strong>사업자등록번호 </strong>854-81-02137<span
+              class="block"></span>
+            <strong>이메일</strong>hoppybox@hoppy.co.kr<span class="block"></span>
+          </address>
+          <p class="copyright">
+            COPYRIGHT RUNA BREW COMPANY. ALL RIGHTS RESERVED.
+          </p>
+          <p class="tel">구매·유통 문의<strong>1533-2970</strong></p>
+        </div>
+      </footer>
+</body>
+</html>

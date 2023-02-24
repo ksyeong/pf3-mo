@@ -1,9 +1,11 @@
 /* 하단 */
-footer{
+footer {
   background-color: #333;
   color: #a0a0a0;
+  margin-top: 100px;
 }
-footer .wrap{
+
+footer .wrap {
   padding: 25px 0;
   margin: 0 auto;
   box-sizing: border-box;
@@ -11,10 +13,12 @@ footer .wrap{
   position: relative;
   justify-content: space-between;
 }
-footer .wrap h1{ 
+
+footer .wrap h1 {
   margin-top: 0;
 }
-footer .wrap h1 a{
+
+footer .wrap h1 a {
   font-size: 0;
   background-image: url(../img/f-logo.svg);
   width: 80px;
@@ -23,36 +27,41 @@ footer .wrap h1 a{
   margin-top: 0;
   background-size: contain;
 }
-footer .wrap address{
+
+footer .wrap address {
   width: 53%;
   display: flex;
   box-sizing: border-box;
   margin-top: 13px;
   font-weight: 300;
 }
-footer .wrap address span{
+
+footer .wrap address span {
   display: none;
 }
 
-footer .wrap address strong{
+footer .wrap address strong {
   font-weight: 700;
   margin-right: 5px;
   color: #eee;
 }
 
-footer .wrap address strong:nth-child(n+2){
+footer .wrap address strong:nth-child(n+2) {
   margin-left: 15px;
 }
-footer .wrap p.copyright{
+
+footer .wrap p.copyright {
   position: absolute;
   left: 131px;
   top: 72px;
   font-weight: 300;
 }
-footer .wrap p.tel{
+
+footer .wrap p.tel {
   margin-right: 70px;
 }
-footer .wrap p.tel strong{  
+
+footer .wrap p.tel strong {
   font-size: 40px;
   vertical-align: top;
   line-height: 0.7;

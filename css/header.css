@@ -1,96 +1,112 @@
 /* 상단 영역 */
-header{
+header {
     width: 100%;
     position: relative;
     z-index: 3;
     margin: 0;
     transition: all 0.7s;
 }
-header .h-nav{
+
+header .h-nav {
+    background-color: #03046b !important;
     width: 100%;
     height: 98px;
     position: fixed;
     transition: all 0.7s;
     box-sizing: border-box;
 }
-header .h-nav:hover{    
+
+header .h-nav:hover {
     background-color: #03046b !important;
     width: 100%;
 }
-header .wrap{
+
+header .wrap {
     padding: 0;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
 }
 
-header .wrap h1{
+header .wrap h1 {
     font-size: 58px;
     color: #fff;
     margin: 0;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-header .wrap nav{    
+
+header .wrap nav {
     display: flex;
     width: 100%;
     justify-content: center;
     column-gap: 30px;
 }
-header .wrap h1 > a{ 
+
+header .wrap h1>a {
     font-size: 0;
-    background-image: url(../img/logo.svg); 
+    background-image: url(../img/logo.svg);
     background-repeat: no-repeat;
     width: 70px;
     height: 70px;
     display: block;
 }
-header ul{
+
+header ul {
     display: flex;
 }
-header ul li{  
-}
-header ul li a{
+
+header ul li {}
+
+header ul li a {
     color: #eee;
     line-height: 2;
 }
-header ul.gnb{    
+
+header ul.gnb {
     width: 80%;
     justify-content: center;
 }
-header ul.gnb > li{   
+
+header ul.gnb>li {
     padding: 0px 56px;
 }
-header ul.gnb > li > a{ 
+
+header ul.gnb>li>a {
     font-size: 19px;
     display: block;
     line-height: 5;
     border-bottom: 3px solid transparent;
     font-weight: 300;
 }
-header ul.gnb > li > a:hover{
+
+header ul.gnb>li>a:hover {
     color: #fff;
     border-bottom: 3px solid #eee;
 }
-header ul.gnb > li:hover div.bg{
+
+header ul.gnb>li:hover div.bg {
     display: block;
 }
-header ul.gnb > li div.bg{    
+
+header ul.gnb>li div.bg {
     position: absolute;
     left: 0;
     width: 100%;
     height: 300px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgb(255, 255, 255);
     display: none;
     font-weight: 300;
 }
-header ul.gnb > li div.bg div.wrap{
-    
+
+header ul.gnb>li div.bg div.wrap {
+
     justify-content: left;
     height: 100%;
     padding-top: 0px;
 }
-header ul.gnb > li div.bg div.wrap h2{
+
+header ul.gnb>li div.bg div.wrap h2 {
     width: 30%;
     border-right: 1px solid #eee;
     height: 100%;
@@ -99,25 +115,30 @@ header ul.gnb > li div.bg div.wrap h2{
     font-size: 30px;
     text-align: center;
 }
-header ul.gnb > li div.bg div.wrap ul.sub1{
-    
+
+header ul.gnb>li div.bg div.wrap ul.sub1 {
+
     flex-direction: column;
     height: 100%;
     padding-top: 20px;
     box-sizing: border-box;
 }
-header ul.gnb > li div.bg div.wrap ul.sub1 li{
-    border-left: 3px solid transparent; 
+
+header ul.gnb>li div.bg div.wrap ul.sub1 li {
+    border-left: 3px solid transparent;
 }
-header ul.gnb > li div.bg div.wrap ul.sub1 li:hover{
-    border-left: 3px solid #03046b; 
+
+header ul.gnb>li div.bg div.wrap ul.sub1 li:hover {
+    border-left: 3px solid #03046b;
 }
-header ul.gnb > li div.bg div.wrap ul.sub1 li a{   
+
+header ul.gnb>li div.bg div.wrap ul.sub1 li a {
     padding-left: 20px;
     font-size: 18px;
     color: #333;
 }
-header ul.enb{    
+
+header ul.enb {
     width: 10%;
     align-items: center;
     justify-content: end;
